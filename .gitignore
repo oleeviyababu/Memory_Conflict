@@ -1,12 +1,11 @@
-@"
 __pycache__/
 *.py[cod]
 .venv/
 venv/
+palm/
 .env
 .DS_Store
 .idea/
 .vscode/
 context_check.json
 results/excluded/
-"@ | Set-Content -Encoding UTF8 ".gitignore"
