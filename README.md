@@ -21,13 +21,35 @@ memory-conflict-review/
 ├── requirements.txt
 ├── .gitignore
 ├── scripts/       Python experiment and analysis scripts
-├── results/       Raw JSONL outputs, summaries, CSV files, and manual audit
+├── results/       Raw JSONL outputs, summaries, and CSV files
 └── plots/         Figures used in the paper
 ```
 
 Please run commands from the repository root. The scripts use relative paths
 such as `results/...`, so running them from inside the `scripts` folder will not
 work correctly.
+
+## How to check the paper numbers without rerunning models
+
+The primary claims can be verified from these summary files:
+
+| Paper result | File |
+|---|---|
+| 6K BM25 budgets 64 / 128 / 256 / 512 | `results/12_bm25_budget_audit_summary.json` |
+| 6K paired budget comparisons | `results/13_bm25_budget_pairwise_summary.json` |
+| 6K conflict vs. no-conflict split | `results/15_conflict_stratification_summary.json` |
+| Final Qwen2.5 equal-size comparison | `results/19_final_controlled_qwen25_summary.json` |
+| Final Qwen3 equal-size comparison | `results/20b_final_controlled_qwen3_summary.json` |
+| 32K BM25-64 vs. BM25-512 | `results/21b_sh32k_bm25_replication_summary.json` |
+
+Row-level model answers are in the matching `.jsonl` files. The two paper
+figures are `plots/figure1_controlled_models.png` and
+`plots/figure2_budget_accuracy.png`.
+
+The qualitative 20-case manual audit and the metric-sensitivity notes are
+reported in the paper appendix. This archive does not include a separate
+`22_manual_audit_*` file. The underlying answers inspected in that audit are
+in the `19`, `20b`, and `21b` JSONL files.
 
 ## Requirements
 
@@ -197,13 +219,17 @@ python scripts/15_stratify_results_by_conflict.py
 
 ```bash
 python scripts/19_run_final_controlled_qwen25.py
-python scripts/20b_run_final_controlled_qwen3.py
+python scripts/20_run_final_controlled_qwen3_fixed.py
 ```
+
+Script 19 writes `results/19_final_controlled_qwen25.*`. Script 20 writes
+`results/20b_final_controlled_qwen3.*`. The `20b` prefix marks the valid
+Qwen3 run with thinking disabled. The earlier thinking-mode run is not
+included.
 
 Both conditions contain four statements. Condition A contains the newest target
 statement and three unrelated statements. Condition B replaces one unrelated
 statement with the obsolete target statement.
-
 
 ### 5. Run the 32K replication
 
@@ -242,12 +268,10 @@ statistics are available in `results/`.
 
 - Model outputs can depend on the Ollama version, model build, hardware, and
   tokenizer version. The saved outputs are the exact outputs used for the paper.
-- Scripts 19, 20b, and 21b support continuing from completed output rows.
+- Scripts 19, 20, and 21b support continuing from completed output rows.
 - Script 18 is a 10-question frozen-prompt pilot with 40 calls. It opens its raw
   output file in write mode. Make a backup or rename the existing result before
   running script 18 again.
-- The `22_manual_audit_*` files contain human review of selected edge cases.
-  They are annotations, not additional model calls.
 - Gold-assisted support checks use the benchmark answer only for post-hoc
   diagnosis. They are not presented as a deployable retrieval method.
 - Exact McNemar tests treat questions as paired benchmark units. Because the
@@ -261,9 +285,9 @@ statistics are available in `results/`.
 - `16` and `17`: earlier exploratory controlled experiment and failure audit.
 - `18`: frozen-prompt pilot.
 - `19`: final Qwen2.5 controlled experiment.
-- `20b`: valid Qwen3 controlled experiment with thinking disabled.
+- `20b`: valid Qwen3 controlled experiment with thinking disabled. Produced by
+  `scripts/20_run_final_controlled_qwen3_fixed.py`.
 - `21b`: corrected 32K BM25 replication and update chains.
-- `22`: manual audit and sensitivity adjustment.
 
 `context_check.json`, Python cache files, private server details, and excluded
 invalid runs are intentionally not part of the review artifact.
