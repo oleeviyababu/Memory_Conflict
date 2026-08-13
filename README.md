@@ -233,17 +233,10 @@ statement with the obsolete target statement.
 
 ### 5. Run the 32K replication
 
-A short preflight can be run first:
-
-```bash
-python scripts/21b_run_sh32k_bm25_replication.py --limit 5
-```
-
-The full replication is:
+The complete saved results are already included. To rerun the full replication:
 
 ```bash
 python scripts/21b_run_sh32k_bm25_replication.py
-```
 
 The 32K experiment compares BM25-64 and BM25-512 on the same 100 questions.
 
