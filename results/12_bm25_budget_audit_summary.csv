@@ -1,0 +1,5 @@
+budget,question_count,correct_count,accuracy_percent,oracle_present_count,oracle_recall_percent,oracle_present_correct,accuracy_when_oracle_present_percent,oracle_missing_count,oracle_missing_correct,accuracy_when_oracle_missing_percent,mean_statement_count,mean_evidence_tokens
+64,100,45,45.0,100,100.0,45,45.0,0,0,,4.17,60.23
+128,100,40,40.0,100,100.0,40,40.0,0,0,,8.57,124.61
+256,100,36,36.0,100,100.0,36,36.0,0,0,,16.99,251.32
+512,100,32,32.0,100,100.0,32,32.0,0,0,,33.6,507.44

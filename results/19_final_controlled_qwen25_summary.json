@@ -1,0 +1,252 @@
+{
+  "dataset": "ai-hyz/MemoryAgentBench",
+  "split": "Conflict_Resolution",
+  "source": "factconsolidation_sh_6k",
+  "model": "qwen2.5:7b-instruct",
+  "prompt_version": "frozen_non_abstaining_v1",
+  "requested_num_ctx": 2048,
+  "temperature": 0,
+  "seed": 42,
+  "num_predict": 64,
+  "expected_question_count": 74,
+  "expected_call_count": 148,
+  "completed_call_count": 148,
+  "conditions": [
+    {
+      "condition": "latest_plus_3_unrelated",
+      "question_count": 74,
+      "correct_count": 74,
+      "accuracy_percent": 100.0,
+      "latest_count": 74,
+      "stale_count": 0,
+      "unknown_count": 0,
+      "other_count": 0,
+      "mean_prompt_eval_count": 155.06756756756758,
+      "mean_client_elapsed_seconds": 0.22548377433024044
+    },
+    {
+      "condition": "old_plus_latest_plus_2_unrelated",
+      "question_count": 74,
+      "correct_count": 33,
+      "accuracy_percent": 44.5945945945946,
+      "latest_count": 33,
+      "stale_count": 41,
+      "unknown_count": 0,
+      "other_count": 0,
+      "mean_prompt_eval_count": 154.54054054054055,
+      "mean_client_elapsed_seconds": 0.1974254405453197
+    }
+  ],
+  "paired_comparison": {
+    "first_condition": "latest_plus_3_unrelated",
+    "second_condition": "old_plus_latest_plus_2_unrelated",
+    "question_count": 74,
+    "both_correct": 33,
+    "first_only_correct": 41,
+    "second_only_correct": 0,
+    "both_wrong": 0,
+    "accuracy_difference_points": 55.4054054054054,
+    "correct_to_stale_count": 41,
+    "exact_mcnemar_p_value": 9.094947017729282e-13,
+    "flip_examples": [
+      {
+        "question_index": 1,
+        "question": "What is Nobuhiro Watsuki famous for?",
+        "gold_answers": [
+          "The Fairly OddParents"
+        ],
+        "stale_values": [
+          "Rurouni Kenshin"
+        ],
+        "condition_a_answer": "The Fairly OddParents",
+        "condition_b_answer": "Rurouni Kenshin",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 5,
+        "question": "Who is the author of The Marriage of Figaro?",
+        "gold_answers": [
+          "Thomas Kyd"
+        ],
+        "stale_values": [
+          "Pierre Beaumarchais"
+        ],
+        "condition_a_answer": "Thomas Kyd",
+        "condition_b_answer": "Pierre Beaumarchais",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 6,
+        "question": "Which sport is Tunisia national football team associated with?",
+        "gold_answers": [
+          "basketball"
+        ],
+        "stale_values": [
+          "association football"
+        ],
+        "condition_a_answer": "basketball",
+        "condition_b_answer": "association football",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 7,
+        "question": "Which sport is quarterback associated with?",
+        "gold_answers": [
+          "Muay Thai"
+        ],
+        "stale_values": [
+          "American football"
+        ],
+        "condition_a_answer": "Muay Thai",
+        "condition_b_answer": "American football",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 8,
+        "question": "What is the official language of Japan?",
+        "gold_answers": [
+          "Swedish"
+        ],
+        "stale_values": [
+          "Japanese"
+        ],
+        "condition_a_answer": "Swedish",
+        "condition_b_answer": "Japanese",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 12,
+        "question": "What position does Robert Parish play?",
+        "gold_answers": [
+          "quarterback"
+        ],
+        "stale_values": [
+          "center"
+        ],
+        "condition_a_answer": "quarterback",
+        "condition_b_answer": "center",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 13,
+        "question": "What is the country of citizenship of Cédric Klapisch?",
+        "gold_answers": [
+          "Malaysia"
+        ],
+        "stale_values": [
+          "France"
+        ],
+        "condition_a_answer": "Malaysia",
+        "condition_b_answer": "France",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 14,
+        "question": "Who is the author of Sidereus Nuncius?",
+        "gold_answers": [
+          "Samuel Beckett"
+        ],
+        "stale_values": [
+          "Galileo Galilei"
+        ],
+        "condition_a_answer": "Samuel Beckett",
+        "condition_b_answer": "Galileo Galilei",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 15,
+        "question": "Which continent is Germany located in?",
+        "gold_answers": [
+          "Africa"
+        ],
+        "stale_values": [
+          "Europe"
+        ],
+        "condition_a_answer": "Africa",
+        "condition_b_answer": "Europe",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 16,
+        "question": "Which religion is Kingdom of Ireland affiliated with?",
+        "gold_answers": [
+          "Zoroastrianism"
+        ],
+        "stale_values": [
+          "Catholic Church"
+        ],
+        "condition_a_answer": "Zoroastrianism",
+        "condition_b_answer": "Catholic Church",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 19,
+        "question": "Who is the chief executive officer of Microsoft?",
+        "gold_answers": [
+          "Steve Jobs"
+        ],
+        "stale_values": [
+          "Satya Nadella"
+        ],
+        "condition_a_answer": "Steve Jobs",
+        "condition_b_answer": "Satya Nadella",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 29,
+        "question": "Which city did Oscar Wilde die in?",
+        "gold_answers": [
+          "Guangzhou"
+        ],
+        "stale_values": [
+          "Paris"
+        ],
+        "condition_a_answer": "Guangzhou",
+        "condition_b_answer": "Paris",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 30,
+        "question": "Which country was baseball created in?",
+        "gold_answers": [
+          "Japan"
+        ],
+        "stale_values": [
+          "United States of America"
+        ],
+        "condition_a_answer": "Japan",
+        "condition_b_answer": "United States of America",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 33,
+        "question": "Which country was rap rock created in?",
+        "gold_answers": [
+          "Russian Empire"
+        ],
+        "stale_values": [
+          "United States of America"
+        ],
+        "condition_a_answer": "Russian Empire",
+        "condition_b_answer": "United States of America",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 34,
+        "question": "Where was Christianity founded?",
+        "gold_answers": [
+          "Taipei"
+        ],
+        "stale_values": [
+          "Jerusalem"
+        ],
+        "condition_a_answer": "Taipei",
+        "condition_b_answer": "Jerusalem",
+        "condition_b_answer_type": "stale"
+      }
+    ]
+  },
+  "distractor_selection": "Deterministic statements with zero content-word overlap with the question, excluding update-chain values.",
+  "statistical_warning": "McNemar treats benchmark questions as paired units. These questions share one benchmark history, so the p-value is diagnostic rather than population-level evidence.",
+  "result_file": "results\\19_final_controlled_qwen25.jsonl"
+}

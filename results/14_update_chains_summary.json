@@ -1,0 +1,18 @@
+{
+  "dataset": "ai-hyz/MemoryAgentBench",
+  "split": "Conflict_Resolution",
+  "source": "factconsolidation_sh_6k",
+  "question_count": 100,
+  "resolved_count": 100,
+  "unresolved_count": 0,
+  "oracle_is_latest_count": 100,
+  "questions_with_previous_conflict": 74,
+  "minimum_chain_size": 1,
+  "maximum_chain_size": 2,
+  "mean_chain_size": 1.74,
+  "minimum_previous_conflicts": 0,
+  "maximum_previous_conflicts": 1,
+  "mean_previous_conflicts": 0.74,
+  "unresolved_reasons": {},
+  "chain_file": "results\\14_update_chains.jsonl"
+}

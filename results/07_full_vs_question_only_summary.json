@@ -1,0 +1,17 @@
+{
+  "question_count": 100,
+  "full_context_correct": 37,
+  "full_context_accuracy_percent": 37.0,
+  "question_only_correct": 19,
+  "question_only_accuracy_percent": 19.0,
+  "absolute_memory_gain_points": 18.0,
+  "same_answer_count": 55,
+  "same_answer_percent": 55.0,
+  "categories": {
+    "both_correct": 19,
+    "full_context_only_correct": 18,
+    "question_only_only_correct": 0,
+    "both_wrong": 63
+  },
+  "comparison_file": "results\\07_full_vs_question_only.jsonl"
+}

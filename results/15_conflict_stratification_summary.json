@@ -1,0 +1,257 @@
+{
+  "question_count": 100,
+  "conflict_question_count": 74,
+  "no_conflict_question_count": 26,
+  "conditions": [
+    {
+      "condition": "question_only",
+      "conflict": {
+        "question_count": 74,
+        "correct_count": 0,
+        "accuracy_percent": 0.0
+      },
+      "no_conflict": {
+        "question_count": 26,
+        "correct_count": 19,
+        "accuracy_percent": 73.07692307692308
+      },
+      "accuracy_gap_no_conflict_minus_conflict": 73.07692307692308
+    },
+    {
+      "condition": "full_context",
+      "conflict": {
+        "question_count": 74,
+        "correct_count": 11,
+        "accuracy_percent": 14.864864864864865
+      },
+      "no_conflict": {
+        "question_count": 26,
+        "correct_count": 26,
+        "accuracy_percent": 100.0
+      },
+      "accuracy_gap_no_conflict_minus_conflict": 85.13513513513513
+    },
+    {
+      "condition": "bm25_64",
+      "conflict": {
+        "question_count": 74,
+        "correct_count": 19,
+        "accuracy_percent": 25.675675675675677
+      },
+      "no_conflict": {
+        "question_count": 26,
+        "correct_count": 26,
+        "accuracy_percent": 100.0
+      },
+      "accuracy_gap_no_conflict_minus_conflict": 74.32432432432432
+    },
+    {
+      "condition": "bm25_128",
+      "conflict": {
+        "question_count": 74,
+        "correct_count": 15,
+        "accuracy_percent": 20.27027027027027
+      },
+      "no_conflict": {
+        "question_count": 26,
+        "correct_count": 25,
+        "accuracy_percent": 96.15384615384616
+      },
+      "accuracy_gap_no_conflict_minus_conflict": 75.88357588357589
+    },
+    {
+      "condition": "bm25_256",
+      "conflict": {
+        "question_count": 74,
+        "correct_count": 12,
+        "accuracy_percent": 16.216216216216218
+      },
+      "no_conflict": {
+        "question_count": 26,
+        "correct_count": 24,
+        "accuracy_percent": 92.3076923076923
+      },
+      "accuracy_gap_no_conflict_minus_conflict": 76.0914760914761
+    },
+    {
+      "condition": "bm25_512",
+      "conflict": {
+        "question_count": 74,
+        "correct_count": 9,
+        "accuracy_percent": 12.162162162162161
+      },
+      "no_conflict": {
+        "question_count": 26,
+        "correct_count": 23,
+        "accuracy_percent": 88.46153846153847
+      },
+      "accuracy_gap_no_conflict_minus_conflict": 76.2993762993763
+    },
+    {
+      "condition": "isolated_gold",
+      "conflict": {
+        "question_count": 74,
+        "correct_count": 71,
+        "accuracy_percent": 95.94594594594595
+      },
+      "no_conflict": {
+        "question_count": 26,
+        "correct_count": 26,
+        "accuracy_percent": 100.0
+      },
+      "accuracy_gap_no_conflict_minus_conflict": 4.054054054054049
+    }
+  ],
+  "paired_bm25_64_to_512": {
+    "conflict": {
+      "question_count": 74,
+      "both_correct": 8,
+      "lower_only_correct": 11,
+      "higher_only_correct": 1,
+      "both_wrong": 54,
+      "net_loss_count": 10,
+      "examples_lost": [
+        {
+          "question_index": 0,
+          "question": "Which sport is goaltender associated with?",
+          "gold_answers": [
+            "pesäpallo"
+          ],
+          "lower_answer": "pesäpallo",
+          "higher_answer": "ice hockey"
+        },
+        {
+          "question_index": 13,
+          "question": "What is the country of citizenship of Cédric Klapisch?",
+          "gold_answers": [
+            "Malaysia"
+          ],
+          "lower_answer": "Malaysia",
+          "higher_answer": "France"
+        },
+        {
+          "question_index": 17,
+          "question": "Which country was association football created in?",
+          "gold_answers": [
+            "Italy"
+          ],
+          "lower_answer": "Italy",
+          "higher_answer": "England"
+        },
+        {
+          "question_index": 23,
+          "question": "Who is the director of American Broadcasting Company?",
+          "gold_answers": [
+            "Ernst Heinkel"
+          ],
+          "lower_answer": "Ernst Heinkel",
+          "higher_answer": "Bob Iger"
+        },
+        {
+          "question_index": 24,
+          "question": "Which city did Gennady Rozhdestvensky die in?",
+          "gold_answers": [
+            "United States of America"
+          ],
+          "lower_answer": "United States of America",
+          "higher_answer": "Moscow"
+        },
+        {
+          "question_index": 28,
+          "question": "What type of music does Michael Mantler play?",
+          "gold_answers": [
+            "post-punk"
+          ],
+          "lower_answer": "post-punk",
+          "higher_answer": "jazz"
+        },
+        {
+          "question_index": 53,
+          "question": "Which religion is Imelda Marcos affiliated with?",
+          "gold_answers": [
+            "atheism"
+          ],
+          "lower_answer": "atheism",
+          "higher_answer": "Catholicism"
+        },
+        {
+          "question_index": 54,
+          "question": "What type of music does Dana International play?",
+          "gold_answers": [
+            "Australian hip hop"
+          ],
+          "lower_answer": "Australian hip hop",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 60,
+          "question": "What type of music does John McVie play?",
+          "gold_answers": [
+            "rap rock"
+          ],
+          "lower_answer": "rap rock",
+          "higher_answer": "rock music"
+        },
+        {
+          "question_index": 83,
+          "question": "Which religion is Karen Armstrong affiliated with?",
+          "gold_answers": [
+            "Church of Scotland"
+          ],
+          "lower_answer": "Church of Scotland",
+          "higher_answer": "Catholic Church"
+        }
+      ],
+      "examples_gained": [
+        {
+          "question_index": 59,
+          "question": "Which sport is Bo Ryan associated with?",
+          "gold_answers": [
+            "association football"
+          ],
+          "lower_answer": "basketball",
+          "higher_answer": "association football"
+        }
+      ]
+    },
+    "no_conflict": {
+      "question_count": 26,
+      "both_correct": 23,
+      "lower_only_correct": 3,
+      "higher_only_correct": 0,
+      "both_wrong": 0,
+      "net_loss_count": 3,
+      "examples_lost": [
+        {
+          "question_index": 72,
+          "question": "What position does Blair Walsh play?",
+          "gold_answers": [
+            "placekicker"
+          ],
+          "lower_answer": "placekicker",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 95,
+          "question": "What position does Mike D'Antoni play?",
+          "gold_answers": [
+            "point guard"
+          ],
+          "lower_answer": "point guard",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 99,
+          "question": "What position does Irving Fryar play?",
+          "gold_answers": [
+            "wide receiver"
+          ],
+          "lower_answer": "wide receiver",
+          "higher_answer": "UNKNOWN"
+        }
+      ],
+      "examples_gained": []
+    }
+  },
+  "interpretation_warning": "The gold answer was used upstream to identify the update chains and oracle statements. This is a diagnostic stratification."
+}

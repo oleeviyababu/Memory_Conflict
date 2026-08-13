@@ -1,0 +1,15 @@
+{
+  "dataset": "ai-hyz/MemoryAgentBench",
+  "split": "Conflict_Resolution",
+  "source": "factconsolidation_sh_32k",
+  "chain_version": "template_from_gold_statement_v1",
+  "question_count": 100,
+  "chains_resolved": 100,
+  "oracle_is_latest_count": 100,
+  "conflict_question_count": 63,
+  "no_conflict_question_count": 37,
+  "minimum_chain_size": 1,
+  "maximum_chain_size": 2,
+  "mean_chain_size": 1.63,
+  "chain_file": "results\\21b_sh32k_update_chains.jsonl"
+}

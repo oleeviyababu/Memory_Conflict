@@ -1,0 +1,107 @@
+{
+  "model": "qwen2.5:7b-instruct",
+  "source": "factconsolidation_sh_6k",
+  "call_count": 40,
+  "condition_summaries": [
+    {
+      "condition": "latest_only",
+      "group": "all",
+      "question_count": 10,
+      "correct_count": 10,
+      "accuracy_percent": 100.0
+    },
+    {
+      "condition": "latest_only",
+      "group": "conflict",
+      "question_count": 10,
+      "correct_count": 10,
+      "accuracy_percent": 100.0
+    },
+    {
+      "condition": "latest_plus_3_unrelated",
+      "group": "all",
+      "question_count": 10,
+      "correct_count": 10,
+      "accuracy_percent": 100.0
+    },
+    {
+      "condition": "latest_plus_3_unrelated",
+      "group": "conflict",
+      "question_count": 10,
+      "correct_count": 10,
+      "accuracy_percent": 100.0
+    },
+    {
+      "condition": "old_plus_latest",
+      "group": "all",
+      "question_count": 10,
+      "correct_count": 5,
+      "accuracy_percent": 50.0
+    },
+    {
+      "condition": "old_plus_latest",
+      "group": "conflict",
+      "question_count": 10,
+      "correct_count": 5,
+      "accuracy_percent": 50.0
+    },
+    {
+      "condition": "old_plus_latest_plus_2_unrelated",
+      "group": "all",
+      "question_count": 10,
+      "correct_count": 3,
+      "accuracy_percent": 30.0
+    },
+    {
+      "condition": "old_plus_latest_plus_2_unrelated",
+      "group": "conflict",
+      "question_count": 10,
+      "correct_count": 3,
+      "accuracy_percent": 30.0
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "first_condition": "latest_only",
+      "second_condition": "latest_plus_3_unrelated",
+      "question_count": 10,
+      "both_correct": 10,
+      "first_only_correct": 0,
+      "second_only_correct": 0,
+      "both_wrong": 0,
+      "exact_mcnemar_p_value": 1.0
+    },
+    {
+      "first_condition": "latest_only",
+      "second_condition": "old_plus_latest",
+      "question_count": 10,
+      "both_correct": 5,
+      "first_only_correct": 5,
+      "second_only_correct": 0,
+      "both_wrong": 0,
+      "exact_mcnemar_p_value": 0.0625
+    },
+    {
+      "first_condition": "latest_plus_3_unrelated",
+      "second_condition": "old_plus_latest_plus_2_unrelated",
+      "question_count": 10,
+      "both_correct": 3,
+      "first_only_correct": 7,
+      "second_only_correct": 0,
+      "both_wrong": 0,
+      "exact_mcnemar_p_value": 0.015625
+    },
+    {
+      "first_condition": "old_plus_latest",
+      "second_condition": "old_plus_latest_plus_2_unrelated",
+      "question_count": 10,
+      "both_correct": 3,
+      "first_only_correct": 2,
+      "second_only_correct": 0,
+      "both_wrong": 5,
+      "exact_mcnemar_p_value": 0.5
+    }
+  ],
+  "distractor_selection": "Deterministic statements with zero content-word overlap with the question, excluding update-chain values.",
+  "result_file": "results\\18_frozen_prompt_pilot.jsonl"
+}

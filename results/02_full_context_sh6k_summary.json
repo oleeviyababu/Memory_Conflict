@@ -1,0 +1,13 @@
+{
+  "dataset": "ai-hyz/MemoryAgentBench",
+  "split": "Conflict_Resolution",
+  "source": "factconsolidation_sh_6k",
+  "model": "qwen2.5:7b-instruct",
+  "requested_num_ctx": 16384,
+  "question_count": 5,
+  "correct_count": 2,
+  "substring_exact_match_percent": 40.0,
+  "minimum_prompt_eval_count": 6978,
+  "maximum_prompt_eval_count": 6981,
+  "result_file": "results\\02_full_context_sh6k_smoke.jsonl"
+}

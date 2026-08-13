@@ -1,0 +1,131 @@
+{
+  "model": "qwen2.5:7b-instruct",
+  "source": "factconsolidation_sh_6k",
+  "call_count": 348,
+  "condition_summaries": [
+    {
+      "condition": "latest_only",
+      "group": "all",
+      "question_count": 100,
+      "correct_count": 53,
+      "accuracy_percent": 53.0
+    },
+    {
+      "condition": "latest_only",
+      "group": "conflict",
+      "question_count": 74,
+      "correct_count": 28,
+      "accuracy_percent": 37.83783783783784
+    },
+    {
+      "condition": "latest_only",
+      "group": "no_conflict",
+      "question_count": 26,
+      "correct_count": 25,
+      "accuracy_percent": 96.15384615384616
+    },
+    {
+      "condition": "latest_plus_3_unrelated",
+      "group": "all",
+      "question_count": 100,
+      "correct_count": 65,
+      "accuracy_percent": 65.0
+    },
+    {
+      "condition": "latest_plus_3_unrelated",
+      "group": "conflict",
+      "question_count": 74,
+      "correct_count": 39,
+      "accuracy_percent": 52.7027027027027
+    },
+    {
+      "condition": "latest_plus_3_unrelated",
+      "group": "no_conflict",
+      "question_count": 26,
+      "correct_count": 26,
+      "accuracy_percent": 100.0
+    },
+    {
+      "condition": "old_plus_latest",
+      "group": "all",
+      "question_count": 74,
+      "correct_count": 11,
+      "accuracy_percent": 14.864864864864865
+    },
+    {
+      "condition": "old_plus_latest",
+      "group": "conflict",
+      "question_count": 74,
+      "correct_count": 11,
+      "accuracy_percent": 14.864864864864865
+    },
+    {
+      "condition": "old_plus_latest_plus_2_unrelated",
+      "group": "all",
+      "question_count": 74,
+      "correct_count": 9,
+      "accuracy_percent": 12.162162162162161
+    },
+    {
+      "condition": "old_plus_latest_plus_2_unrelated",
+      "group": "conflict",
+      "question_count": 74,
+      "correct_count": 9,
+      "accuracy_percent": 12.162162162162161
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "first_condition": "latest_only",
+      "second_condition": "latest_plus_3_unrelated",
+      "question_count": 74,
+      "both_correct": 23,
+      "first_only_correct": 5,
+      "second_only_correct": 16,
+      "both_wrong": 30,
+      "exact_mcnemar_p_value": 0.02660369873046875
+    },
+    {
+      "first_condition": "latest_only",
+      "second_condition": "old_plus_latest",
+      "question_count": 74,
+      "both_correct": 8,
+      "first_only_correct": 20,
+      "second_only_correct": 3,
+      "both_wrong": 43,
+      "exact_mcnemar_p_value": 0.00048828125
+    },
+    {
+      "first_condition": "latest_plus_3_unrelated",
+      "second_condition": "old_plus_latest_plus_2_unrelated",
+      "question_count": 74,
+      "both_correct": 8,
+      "first_only_correct": 31,
+      "second_only_correct": 1,
+      "both_wrong": 34,
+      "exact_mcnemar_p_value": 1.5366822481155396e-08
+    },
+    {
+      "first_condition": "old_plus_latest",
+      "second_condition": "old_plus_latest_plus_2_unrelated",
+      "question_count": 74,
+      "both_correct": 5,
+      "first_only_correct": 6,
+      "second_only_correct": 4,
+      "both_wrong": 59,
+      "exact_mcnemar_p_value": 0.75390625
+    },
+    {
+      "first_condition": "latest_only",
+      "second_condition": "latest_plus_3_unrelated",
+      "question_count": 26,
+      "both_correct": 25,
+      "first_only_correct": 0,
+      "second_only_correct": 1,
+      "both_wrong": 0,
+      "exact_mcnemar_p_value": 1.0
+    }
+  ],
+  "distractor_selection": "Deterministic statements with zero content-word overlap with the question, excluding update-chain values.",
+  "result_file": "results\\16_controlled_conflict_distractors.jsonl"
+}

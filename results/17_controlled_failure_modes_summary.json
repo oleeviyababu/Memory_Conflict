@@ -1,0 +1,433 @@
+{
+  "conflict_question_count": 74,
+  "answer_classification": {
+    "latest_only": {
+      "latest": 28,
+      "stale": 0,
+      "unknown": 46,
+      "other": 0
+    },
+    "latest_plus_3_unrelated": {
+      "latest": 39,
+      "stale": 0,
+      "unknown": 34,
+      "other": 1
+    },
+    "old_plus_latest": {
+      "latest": 11,
+      "stale": 16,
+      "unknown": 45,
+      "other": 2
+    },
+    "old_plus_latest_plus_2_unrelated": {
+      "latest": 9,
+      "stale": 27,
+      "unknown": 38,
+      "other": 0
+    }
+  },
+  "examples": {
+    "latest_only": {
+      "stale": [],
+      "unknown": [
+        {
+          "question_index": 1,
+          "question": "What is Nobuhiro Watsuki famous for?",
+          "gold_answers": [
+            "The Fairly OddParents"
+          ],
+          "stale_values": [
+            "Rurouni Kenshin"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 2,
+          "question": "Which country was rugby union created in?",
+          "gold_answers": [
+            "India"
+          ],
+          "stale_values": [
+            "England"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 5,
+          "question": "Who is the author of The Marriage of Figaro?",
+          "gold_answers": [
+            "Thomas Kyd"
+          ],
+          "stale_values": [
+            "Pierre Beaumarchais"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 6,
+          "question": "Which sport is Tunisia national football team associated with?",
+          "gold_answers": [
+            "basketball"
+          ],
+          "stale_values": [
+            "association football"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 7,
+          "question": "Which sport is quarterback associated with?",
+          "gold_answers": [
+            "Muay Thai"
+          ],
+          "stale_values": [
+            "American football"
+          ],
+          "model_answer": "UNKNOWN"
+        }
+      ],
+      "other": []
+    },
+    "latest_plus_3_unrelated": {
+      "stale": [],
+      "unknown": [
+        {
+          "question_index": 5,
+          "question": "Who is the author of The Marriage of Figaro?",
+          "gold_answers": [
+            "Thomas Kyd"
+          ],
+          "stale_values": [
+            "Pierre Beaumarchais"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 6,
+          "question": "Which sport is Tunisia national football team associated with?",
+          "gold_answers": [
+            "basketball"
+          ],
+          "stale_values": [
+            "association football"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 8,
+          "question": "What is the official language of Japan?",
+          "gold_answers": [
+            "Swedish"
+          ],
+          "stale_values": [
+            "Japanese"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 14,
+          "question": "Who is the author of Sidereus Nuncius?",
+          "gold_answers": [
+            "Samuel Beckett"
+          ],
+          "stale_values": [
+            "Galileo Galilei"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 15,
+          "question": "Which continent is Germany located in?",
+          "gold_answers": [
+            "Africa"
+          ],
+          "stale_values": [
+            "Europe"
+          ],
+          "model_answer": "UNKNOWN"
+        }
+      ],
+      "other": [
+        {
+          "question_index": 80,
+          "question": "What position does Lisa Leslie play?",
+          "gold_answers": [
+            "goaltender"
+          ],
+          "stale_values": [
+            "center"
+          ],
+          "model_answer": "goalie"
+        }
+      ]
+    },
+    "old_plus_latest": {
+      "stale": [
+        {
+          "question_index": 6,
+          "question": "Which sport is Tunisia national football team associated with?",
+          "gold_answers": [
+            "basketball"
+          ],
+          "stale_values": [
+            "association football"
+          ],
+          "model_answer": "association football"
+        },
+        {
+          "question_index": 7,
+          "question": "Which sport is quarterback associated with?",
+          "gold_answers": [
+            "Muay Thai"
+          ],
+          "stale_values": [
+            "American football"
+          ],
+          "model_answer": "American football"
+        },
+        {
+          "question_index": 12,
+          "question": "What position does Robert Parish play?",
+          "gold_answers": [
+            "quarterback"
+          ],
+          "stale_values": [
+            "center"
+          ],
+          "model_answer": "center"
+        },
+        {
+          "question_index": 13,
+          "question": "What is the country of citizenship of Cédric Klapisch?",
+          "gold_answers": [
+            "Malaysia"
+          ],
+          "stale_values": [
+            "France"
+          ],
+          "model_answer": "France"
+        },
+        {
+          "question_index": 15,
+          "question": "Which continent is Germany located in?",
+          "gold_answers": [
+            "Africa"
+          ],
+          "stale_values": [
+            "Europe"
+          ],
+          "model_answer": "Europe"
+        }
+      ],
+      "unknown": [
+        {
+          "question_index": 2,
+          "question": "Which country was rugby union created in?",
+          "gold_answers": [
+            "India"
+          ],
+          "stale_values": [
+            "England"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 5,
+          "question": "Who is the author of The Marriage of Figaro?",
+          "gold_answers": [
+            "Thomas Kyd"
+          ],
+          "stale_values": [
+            "Pierre Beaumarchais"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 8,
+          "question": "What is the official language of Japan?",
+          "gold_answers": [
+            "Swedish"
+          ],
+          "stale_values": [
+            "Japanese"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 14,
+          "question": "Who is the author of Sidereus Nuncius?",
+          "gold_answers": [
+            "Samuel Beckett"
+          ],
+          "stale_values": [
+            "Galileo Galilei"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 16,
+          "question": "Which religion is Kingdom of Ireland affiliated with?",
+          "gold_answers": [
+            "Zoroastrianism"
+          ],
+          "stale_values": [
+            "Catholic Church"
+          ],
+          "model_answer": "UNKNOWN"
+        }
+      ],
+      "other": [
+        {
+          "question_index": 26,
+          "question": "Who is the director of British Broadcasting Corporation?",
+          "gold_answers": [
+            "Narendra Modi"
+          ],
+          "stale_values": [
+            "Tony Hall, Baron Hall of Birkenhead"
+          ],
+          "model_answer": "428. UNKNOWN"
+        },
+        {
+          "question_index": 40,
+          "question": "Which city is the headquarter of University of Bucharest located in?",
+          "gold_answers": [
+            "Ankara"
+          ],
+          "stale_values": [
+            "Bucharest"
+          ],
+          "model_answer": "409"
+        }
+      ]
+    },
+    "old_plus_latest_plus_2_unrelated": {
+      "stale": [
+        {
+          "question_index": 1,
+          "question": "What is Nobuhiro Watsuki famous for?",
+          "gold_answers": [
+            "The Fairly OddParents"
+          ],
+          "stale_values": [
+            "Rurouni Kenshin"
+          ],
+          "model_answer": "Rurouni Kenshin"
+        },
+        {
+          "question_index": 5,
+          "question": "Who is the author of The Marriage of Figaro?",
+          "gold_answers": [
+            "Thomas Kyd"
+          ],
+          "stale_values": [
+            "Pierre Beaumarchais"
+          ],
+          "model_answer": "Pierre Beaumarchais"
+        },
+        {
+          "question_index": 7,
+          "question": "Which sport is quarterback associated with?",
+          "gold_answers": [
+            "Muay Thai"
+          ],
+          "stale_values": [
+            "American football"
+          ],
+          "model_answer": "American football"
+        },
+        {
+          "question_index": 12,
+          "question": "What position does Robert Parish play?",
+          "gold_answers": [
+            "quarterback"
+          ],
+          "stale_values": [
+            "center"
+          ],
+          "model_answer": "center"
+        },
+        {
+          "question_index": 13,
+          "question": "What is the country of citizenship of Cédric Klapisch?",
+          "gold_answers": [
+            "Malaysia"
+          ],
+          "stale_values": [
+            "France"
+          ],
+          "model_answer": "France"
+        }
+      ],
+      "unknown": [
+        {
+          "question_index": 6,
+          "question": "Which sport is Tunisia national football team associated with?",
+          "gold_answers": [
+            "basketball"
+          ],
+          "stale_values": [
+            "association football"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 8,
+          "question": "What is the official language of Japan?",
+          "gold_answers": [
+            "Swedish"
+          ],
+          "stale_values": [
+            "Japanese"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 14,
+          "question": "Who is the author of Sidereus Nuncius?",
+          "gold_answers": [
+            "Samuel Beckett"
+          ],
+          "stale_values": [
+            "Galileo Galilei"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 17,
+          "question": "Which country was association football created in?",
+          "gold_answers": [
+            "Italy"
+          ],
+          "stale_values": [
+            "England"
+          ],
+          "model_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 20,
+          "question": "Who is the chairperson of Harvard University?",
+          "gold_answers": [
+            "Peter Diamandis"
+          ],
+          "stale_values": [
+            "Lawrence S. Bacow"
+          ],
+          "model_answer": "UNKNOWN"
+        }
+      ],
+      "other": []
+    }
+  },
+  "isolated_prompt_template_comparison": {
+    "earlier_prompt_accuracy": 97,
+    "current_prompt_accuracy": 53,
+    "categories": {
+      "both_correct": 52,
+      "earlier_prompt_only_correct": 45,
+      "both_wrong": 2,
+      "current_prompt_only_correct": 1
+    },
+    "warning": "The evidence statement is derived from the same gold-assisted update chain, but the two prompt templates differ."
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "dataset": "ai-hyz/MemoryAgentBench",
+  "split": "Conflict_Resolution",
+  "source": "factconsolidation_sh_6k",
+  "model": "qwen3:14b",
+  "prompt_version": "frozen_non_abstaining_v1",
+  "requested_num_ctx": 2048,
+  "temperature": 0,
+  "seed": 42,
+  "num_predict": 64,
+  "think": false,
+  "expected_question_count": 74,
+  "expected_call_count": 148,
+  "completed_call_count": 148,
+  "conditions": [
+    {
+      "condition": "latest_plus_3_unrelated",
+      "question_count": 74,
+      "correct_count": 74,
+      "accuracy_percent": 100.0,
+      "latest_count": 74,
+      "stale_count": 0,
+      "unknown_count": 0,
+      "other_count": 0,
+      "mean_prompt_eval_count": 163.06756756756758,
+      "mean_client_elapsed_seconds": 0.2565432378292285
+    },
+    {
+      "condition": "old_plus_latest_plus_2_unrelated",
+      "question_count": 74,
+      "correct_count": 65,
+      "accuracy_percent": 87.83783783783784,
+      "latest_count": 65,
+      "stale_count": 9,
+      "unknown_count": 0,
+      "other_count": 0,
+      "mean_prompt_eval_count": 162.54054054054055,
+      "mean_client_elapsed_seconds": 0.22875836216278272
+    }
+  ],
+  "paired_comparison": {
+    "first_condition": "latest_plus_3_unrelated",
+    "second_condition": "old_plus_latest_plus_2_unrelated",
+    "question_count": 74,
+    "both_correct": 65,
+    "first_only_correct": 9,
+    "second_only_correct": 0,
+    "both_wrong": 0,
+    "accuracy_difference_points": 12.162162162162161,
+    "correct_to_stale_count": 9,
+    "exact_mcnemar_p_value": 0.00390625,
+    "flip_examples": [
+      {
+        "question_index": 5,
+        "question": "Who is the author of The Marriage of Figaro?",
+        "gold_answers": [
+          "Thomas Kyd"
+        ],
+        "stale_values": [
+          "Pierre Beaumarchais"
+        ],
+        "condition_a_answer": "Thomas Kyd.",
+        "condition_b_answer": "Pierre Beaumarchais.",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 8,
+        "question": "What is the official language of Japan?",
+        "gold_answers": [
+          "Swedish"
+        ],
+        "stale_values": [
+          "Japanese"
+        ],
+        "condition_a_answer": "Swedish.",
+        "condition_b_answer": "Japanese.",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 43,
+        "question": "What is the capital of Australia?",
+        "gold_answers": [
+          "Oderzo"
+        ],
+        "stale_values": [
+          "Canberra"
+        ],
+        "condition_a_answer": "Oderzo.",
+        "condition_b_answer": "Canberra.",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 56,
+        "question": "Which country was Charlie Hebdo created in?",
+        "gold_answers": [
+          "Italy"
+        ],
+        "stale_values": [
+          "France"
+        ],
+        "condition_a_answer": "Italy.",
+        "condition_b_answer": "France.",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 57,
+        "question": "Who is Elvis Presley married to?",
+        "gold_answers": [
+          "Charles the Bold"
+        ],
+        "stale_values": [
+          "Priscilla Presley"
+        ],
+        "condition_a_answer": "Charles the Bold.",
+        "condition_b_answer": "Priscilla Presley.",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 58,
+        "question": "Who performed Hermione Granger?",
+        "gold_answers": [
+          "Kylie Minogue"
+        ],
+        "stale_values": [
+          "Emma Watson"
+        ],
+        "condition_a_answer": "Kylie Minogue.",
+        "condition_b_answer": "Emma Watson.",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 70,
+        "question": "Which company is AP1000 produced by?",
+        "gold_answers": [
+          "Canadair"
+        ],
+        "stale_values": [
+          "Westinghouse Electric"
+        ],
+        "condition_a_answer": "Canadair.",
+        "condition_b_answer": "Westinghouse Electric.",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 88,
+        "question": "Who founded Sasanian Empire?",
+        "gold_answers": [
+          "Walter Chrysler"
+        ],
+        "stale_values": [
+          "Ardashir I"
+        ],
+        "condition_a_answer": "Walter Chrysler.",
+        "condition_b_answer": "Ardashir I.",
+        "condition_b_answer_type": "stale"
+      },
+      {
+        "question_index": 91,
+        "question": "What is the country of citizenship of Narendra Modi?",
+        "gold_answers": [
+          "Australia"
+        ],
+        "stale_values": [
+          "India"
+        ],
+        "condition_a_answer": "Australia.",
+        "condition_b_answer": "India.",
+        "condition_b_answer_type": "stale"
+      }
+    ]
+  },
+  "distractor_selection": "Deterministic statements with zero content-word overlap with the question, excluding update-chain values.",
+  "statistical_warning": "McNemar treats benchmark questions as paired units. These questions share one benchmark history, so the p-value is diagnostic rather than population-level evidence.",
+  "result_file": "results\\20b_final_controlled_qwen3.jsonl"
+}

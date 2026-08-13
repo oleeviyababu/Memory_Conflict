@@ -1,0 +1,207 @@
+{
+  "dataset": "ai-hyz/MemoryAgentBench",
+  "split": "Conflict_Resolution",
+  "row_count": 8,
+  "columns": [
+    "context",
+    "questions",
+    "answers",
+    "metadata"
+  ],
+  "source_counts": {
+    "factconsolidation_mh_6k": 1,
+    "factconsolidation_mh_32k": 1,
+    "factconsolidation_mh_64k": 1,
+    "factconsolidation_mh_262k": 1,
+    "factconsolidation_sh_6k": 1,
+    "factconsolidation_sh_32k": 1,
+    "factconsolidation_sh_64k": 1,
+    "factconsolidation_sh_262k": 1
+  },
+  "rows": [
+    {
+      "row_index": 0,
+      "source": "factconsolidation_mh_6k",
+      "context_characters": 26157,
+      "context_words": 4430,
+      "question_count": 100,
+      "answer_count": 100,
+      "metadata_keys": [
+        "demo",
+        "haystack_sessions",
+        "keypoints",
+        "previous_events",
+        "qa_pair_ids",
+        "question_dates",
+        "question_ids",
+        "question_types",
+        "source"
+      ],
+      "first_question": "What is the country of citizenship of the spouse of the author of Our Mutual Friend?",
+      "first_answer": [
+        "Belgium"
+      ]
+    },
+    {
+      "row_index": 1,
+      "source": "factconsolidation_mh_32k",
+      "context_characters": 136565,
+      "context_words": 22765,
+      "question_count": 100,
+      "answer_count": 100,
+      "metadata_keys": [
+        "demo",
+        "haystack_sessions",
+        "keypoints",
+        "previous_events",
+        "qa_pair_ids",
+        "question_dates",
+        "question_ids",
+        "question_types",
+        "source"
+      ],
+      "first_question": "Where did the religion associated with the Bagratuni Dynasty come into existence?",
+      "first_answer": [
+        "Taipei"
+      ]
+    },
+    {
+      "row_index": 2,
+      "source": "factconsolidation_mh_64k",
+      "context_characters": 273473,
+      "context_words": 45369,
+      "question_count": 100,
+      "answer_count": 100,
+      "metadata_keys": [
+        "demo",
+        "haystack_sessions",
+        "keypoints",
+        "previous_events",
+        "qa_pair_ids",
+        "question_dates",
+        "question_ids",
+        "question_types",
+        "source"
+      ],
+      "first_question": "In which language are the official documents written in the country of citizenship of Nate \"Tiny\" Archibald?",
+      "first_answer": [
+        "German"
+      ]
+    },
+    {
+      "row_index": 3,
+      "source": "factconsolidation_mh_262k",
+      "context_characters": 1118123,
+      "context_words": 183182,
+      "question_count": 100,
+      "answer_count": 100,
+      "metadata_keys": [
+        "demo",
+        "haystack_sessions",
+        "keypoints",
+        "previous_events",
+        "qa_pair_ids",
+        "question_dates",
+        "question_ids",
+        "question_types",
+        "source"
+      ],
+      "first_question": "What is the country of origin of the sport played by Christian Abbiati?",
+      "first_answer": [
+        "Philippines"
+      ]
+    },
+    {
+      "row_index": 4,
+      "source": "factconsolidation_sh_6k",
+      "context_characters": 26157,
+      "context_words": 4430,
+      "question_count": 100,
+      "answer_count": 100,
+      "metadata_keys": [
+        "demo",
+        "haystack_sessions",
+        "keypoints",
+        "previous_events",
+        "qa_pair_ids",
+        "question_dates",
+        "question_ids",
+        "question_types",
+        "source"
+      ],
+      "first_question": "Which sport is goaltender associated with?",
+      "first_answer": [
+        "pesäpallo"
+      ]
+    },
+    {
+      "row_index": 5,
+      "source": "factconsolidation_sh_32k",
+      "context_characters": 136565,
+      "context_words": 22765,
+      "question_count": 100,
+      "answer_count": 100,
+      "metadata_keys": [
+        "demo",
+        "haystack_sessions",
+        "keypoints",
+        "previous_events",
+        "qa_pair_ids",
+        "question_dates",
+        "question_ids",
+        "question_types",
+        "source"
+      ],
+      "first_question": "Which sport is Salem-Keizer Volcanoes associated with?",
+      "first_answer": [
+        "basketball"
+      ]
+    },
+    {
+      "row_index": 6,
+      "source": "factconsolidation_sh_64k",
+      "context_characters": 273473,
+      "context_words": 45369,
+      "question_count": 100,
+      "answer_count": 100,
+      "metadata_keys": [
+        "demo",
+        "haystack_sessions",
+        "keypoints",
+        "previous_events",
+        "qa_pair_ids",
+        "question_dates",
+        "question_ids",
+        "question_types",
+        "source"
+      ],
+      "first_question": "Which language was The New York Times written in?",
+      "first_answer": [
+        "Ancient Greek"
+      ]
+    },
+    {
+      "row_index": 7,
+      "source": "factconsolidation_sh_262k",
+      "context_characters": 1118123,
+      "context_words": 183182,
+      "question_count": 100,
+      "answer_count": 100,
+      "metadata_keys": [
+        "demo",
+        "haystack_sessions",
+        "keypoints",
+        "previous_events",
+        "qa_pair_ids",
+        "question_dates",
+        "question_ids",
+        "question_types",
+        "source"
+      ],
+      "first_question": "Which university was Adam Putnam educated at?",
+      "first_answer": [
+        "Federal University of Rio de Janeiro"
+      ]
+    }
+  ]
+}

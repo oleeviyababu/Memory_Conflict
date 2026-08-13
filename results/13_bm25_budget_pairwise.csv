@@ -1,0 +1,7 @@
+lower_budget,higher_budget,question_count,lower_correct,higher_correct,accuracy_difference_points,both_correct,lower_only_correct,higher_only_correct,both_wrong,discordant_count,exact_mcnemar_p_value
+64,128,100,45,40,5.0,36,9,4,51,13,0.266845703125
+128,256,100,40,36,4.0,34,6,2,58,8,0.2890625
+256,512,100,36,32,4.0,30,6,2,62,8,0.2890625
+64,256,100,45,36,9.0,33,12,3,52,15,0.03515625
+64,512,100,45,32,13.0,31,14,1,54,15,0.0009765625
+128,512,100,40,32,8.0,30,10,2,58,12,0.03857421875

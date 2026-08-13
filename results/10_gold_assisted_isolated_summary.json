@@ -1,0 +1,15 @@
+{
+  "condition": "gold_assisted_isolated",
+  "diagnostic_only": true,
+  "gold_answer_used_for_evidence_selection": true,
+  "model": "qwen2.5:7b-instruct",
+  "question_count": 100,
+  "evaluated_count": 100,
+  "skipped_count": 0,
+  "correct_count": 97,
+  "substring_exact_match_percent": 97.0,
+  "minimum_prompt_eval_count": 81,
+  "maximum_prompt_eval_count": 103,
+  "mean_client_elapsed_seconds": 0.18335476299980655,
+  "result_file": "results\\10_gold_assisted_isolated.jsonl"
+}

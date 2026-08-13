@@ -1,0 +1,23 @@
+{
+  "model": "qwen2.5:7b-instruct",
+  "source": "factconsolidation_sh_6k",
+  "question_count": 3,
+  "conditions": {
+    "question_only": {
+      "correct": 0,
+      "total": 3,
+      "accuracy_percent": 0.0
+    },
+    "latest_only": {
+      "correct": 3,
+      "total": 3,
+      "accuracy_percent": 100.0
+    },
+    "all_relevant_chronological": {
+      "correct": 3,
+      "total": 3,
+      "accuracy_percent": 100.0
+    }
+  },
+  "result_file": "results\\04_oracle_diagnostic.jsonl"
+}

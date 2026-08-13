@@ -1,0 +1,23 @@
+{
+  "dataset": "ai-hyz/MemoryAgentBench",
+  "split": "Conflict_Resolution",
+  "source": "factconsolidation_sh_6k",
+  "question_count": 100,
+  "oracle_resolved_count": 100,
+  "oracle_unresolved_count": 0,
+  "oracle_statement_retrieved_count": 100,
+  "oracle_statement_recall_percent": 100.0,
+  "gold_answer_string_anywhere_count": 100,
+  "gold_answer_string_anywhere_percent": 100.0,
+  "oracle_present_total": 100,
+  "oracle_present_correct": 32,
+  "accuracy_when_oracle_present_percent": 32.0,
+  "oracle_missing_total": 0,
+  "oracle_missing_correct": 0,
+  "accuracy_when_oracle_missing_percent": null,
+  "categories": {
+    "oracle_present_answer_wrong": 68,
+    "oracle_present_answer_correct": 32
+  },
+  "audit_file": "results\\09_bm25_retrieval_audit.jsonl"
+}

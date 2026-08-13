@@ -1,0 +1,17 @@
+{
+  "dataset": "ai-hyz/MemoryAgentBench",
+  "split": "Conflict_Resolution",
+  "source": "factconsolidation_sh_6k",
+  "condition": "bm25",
+  "model": "qwen2.5:7b-instruct",
+  "question_count": 100,
+  "correct_count": 45,
+  "substring_exact_match_percent": 45.0,
+  "evidence_token_budget": 64,
+  "minimum_evidence_tokens": 53,
+  "maximum_evidence_tokens": 64,
+  "mean_evidence_tokens": 60.23,
+  "minimum_prompt_eval_count": 157,
+  "maximum_prompt_eval_count": 174,
+  "result_file": "results\\11_bm25_sh6k_budget64.jsonl"
+}

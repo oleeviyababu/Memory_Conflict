@@ -1,0 +1,11 @@
+{
+  "dataset": "ai-hyz/MemoryAgentBench",
+  "split": "Conflict_Resolution",
+  "source": "factconsolidation_sh_6k",
+  "condition": "question_only",
+  "model": "qwen2.5:7b-instruct",
+  "question_count": 100,
+  "correct_count": 19,
+  "substring_exact_match_percent": 19.0,
+  "result_file": "results\\06_question_only_sh6k_all.jsonl"
+}

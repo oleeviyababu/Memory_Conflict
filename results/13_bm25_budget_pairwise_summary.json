@@ -1,0 +1,718 @@
+{
+  "budget_order": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "trajectory_encoding": "One digit per budget: 1=correct, 0=wrong",
+  "trajectory_counts": {
+    "0000": 49,
+    "1111": 29,
+    "1000": 7,
+    "1110": 4,
+    "1100": 3,
+    "0100": 3,
+    "1001": 2,
+    "0010": 2,
+    "0111": 1
+  },
+  "pairwise_comparisons": [
+    {
+      "lower_budget": 64,
+      "higher_budget": 128,
+      "question_count": 100,
+      "lower_correct": 45,
+      "higher_correct": 40,
+      "accuracy_difference_points": 5.0,
+      "both_correct": 36,
+      "lower_only_correct": 9,
+      "higher_only_correct": 4,
+      "both_wrong": 51,
+      "discordant_count": 13,
+      "exact_mcnemar_p_value": 0.266845703125,
+      "examples_lost_when_budget_increased": [
+        {
+          "question_index": 0,
+          "question": "Which sport is goaltender associated with?",
+          "gold_answers": [
+            "pesäpallo"
+          ],
+          "lower_answer": "pesäpallo",
+          "higher_answer": "ice hockey"
+        },
+        {
+          "question_index": 17,
+          "question": "Which country was association football created in?",
+          "gold_answers": [
+            "Italy"
+          ],
+          "lower_answer": "Italy",
+          "higher_answer": "England"
+        },
+        {
+          "question_index": 21,
+          "question": "Who founded Church of Scotland?",
+          "gold_answers": [
+            "John Knox"
+          ],
+          "lower_answer": "John Knox",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 23,
+          "question": "Who is the director of American Broadcasting Company?",
+          "gold_answers": [
+            "Ernst Heinkel"
+          ],
+          "lower_answer": "Ernst Heinkel",
+          "higher_answer": "Bob Iger"
+        },
+        {
+          "question_index": 24,
+          "question": "Which city did Gennady Rozhdestvensky die in?",
+          "gold_answers": [
+            "United States of America"
+          ],
+          "lower_answer": "United States of America",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 53,
+          "question": "Which religion is Imelda Marcos affiliated with?",
+          "gold_answers": [
+            "atheism"
+          ],
+          "lower_answer": "atheism",
+          "higher_answer": "Catholicism"
+        },
+        {
+          "question_index": 54,
+          "question": "What type of music does Dana International play?",
+          "gold_answers": [
+            "Australian hip hop"
+          ],
+          "lower_answer": "Australian hip hop",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 77,
+          "question": "Who is the chairperson of Congolese Party of Labour?",
+          "gold_answers": [
+            "Stephen McNeil"
+          ],
+          "lower_answer": "Stephen McNeil",
+          "higher_answer": "Denis Sassou-Nguesso"
+        },
+        {
+          "question_index": 93,
+          "question": "What is the country of citizenship of Charles Messier?",
+          "gold_answers": [
+            "Iran"
+          ],
+          "lower_answer": "Iran",
+          "higher_answer": "France"
+        }
+      ],
+      "examples_gained_when_budget_increased": [
+        {
+          "question_index": 26,
+          "question": "Who is the director of British Broadcasting Corporation?",
+          "gold_answers": [
+            "Narendra Modi"
+          ],
+          "lower_answer": "Tony Hall, Baron Hall of Birkenhead.",
+          "higher_answer": "Narendra Modi"
+        },
+        {
+          "question_index": 33,
+          "question": "Which country was rap rock created in?",
+          "gold_answers": [
+            "Russian Empire"
+          ],
+          "lower_answer": "United States of America",
+          "higher_answer": "Russian Empire"
+        },
+        {
+          "question_index": 56,
+          "question": "Which country was Charlie Hebdo created in?",
+          "gold_answers": [
+            "Italy"
+          ],
+          "lower_answer": "UNKNOWN",
+          "higher_answer": "Italy"
+        },
+        {
+          "question_index": 59,
+          "question": "Which sport is Bo Ryan associated with?",
+          "gold_answers": [
+            "association football"
+          ],
+          "lower_answer": "basketball",
+          "higher_answer": "association football"
+        }
+      ]
+    },
+    {
+      "lower_budget": 128,
+      "higher_budget": 256,
+      "question_count": 100,
+      "lower_correct": 40,
+      "higher_correct": 36,
+      "accuracy_difference_points": 4.0,
+      "both_correct": 34,
+      "lower_only_correct": 6,
+      "higher_only_correct": 2,
+      "both_wrong": 58,
+      "discordant_count": 8,
+      "exact_mcnemar_p_value": 0.2890625,
+      "examples_lost_when_budget_increased": [
+        {
+          "question_index": 13,
+          "question": "What is the country of citizenship of Cédric Klapisch?",
+          "gold_answers": [
+            "Malaysia"
+          ],
+          "lower_answer": "Malaysia",
+          "higher_answer": "France"
+        },
+        {
+          "question_index": 26,
+          "question": "Who is the director of British Broadcasting Corporation?",
+          "gold_answers": [
+            "Narendra Modi"
+          ],
+          "lower_answer": "Narendra Modi",
+          "higher_answer": "Tony Hall, Baron Hall of Birkenhead"
+        },
+        {
+          "question_index": 28,
+          "question": "What type of music does Michael Mantler play?",
+          "gold_answers": [
+            "post-punk"
+          ],
+          "lower_answer": "post-punk",
+          "higher_answer": "jazz"
+        },
+        {
+          "question_index": 33,
+          "question": "Which country was rap rock created in?",
+          "gold_answers": [
+            "Russian Empire"
+          ],
+          "lower_answer": "Russian Empire",
+          "higher_answer": "United States of America"
+        },
+        {
+          "question_index": 56,
+          "question": "Which country was Charlie Hebdo created in?",
+          "gold_answers": [
+            "Italy"
+          ],
+          "lower_answer": "Italy",
+          "higher_answer": "France"
+        },
+        {
+          "question_index": 72,
+          "question": "What position does Blair Walsh play?",
+          "gold_answers": [
+            "placekicker"
+          ],
+          "lower_answer": "placekicker",
+          "higher_answer": "UNKNOWN"
+        }
+      ],
+      "examples_gained_when_budget_increased": [
+        {
+          "question_index": 50,
+          "question": "Which continent is Bengaluru located in?",
+          "gold_answers": [
+            "Oceania"
+          ],
+          "lower_answer": "Asia",
+          "higher_answer": "Oceania"
+        },
+        {
+          "question_index": 69,
+          "question": "Where was Canadair founded?",
+          "gold_answers": [
+            "Tucson"
+          ],
+          "lower_answer": "UNKNOWN",
+          "higher_answer": "Tucson"
+        }
+      ]
+    },
+    {
+      "lower_budget": 256,
+      "higher_budget": 512,
+      "question_count": 100,
+      "lower_correct": 36,
+      "higher_correct": 32,
+      "accuracy_difference_points": 4.0,
+      "both_correct": 30,
+      "lower_only_correct": 6,
+      "higher_only_correct": 2,
+      "both_wrong": 62,
+      "discordant_count": 8,
+      "exact_mcnemar_p_value": 0.2890625,
+      "examples_lost_when_budget_increased": [
+        {
+          "question_index": 50,
+          "question": "Which continent is Bengaluru located in?",
+          "gold_answers": [
+            "Oceania"
+          ],
+          "lower_answer": "Oceania",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 60,
+          "question": "What type of music does John McVie play?",
+          "gold_answers": [
+            "rap rock"
+          ],
+          "lower_answer": "rap rock",
+          "higher_answer": "rock music"
+        },
+        {
+          "question_index": 69,
+          "question": "Where was Canadair founded?",
+          "gold_answers": [
+            "Tucson"
+          ],
+          "lower_answer": "Tucson",
+          "higher_answer": "Montreal"
+        },
+        {
+          "question_index": 83,
+          "question": "Which religion is Karen Armstrong affiliated with?",
+          "gold_answers": [
+            "Church of Scotland"
+          ],
+          "lower_answer": "Church of Scotland",
+          "higher_answer": "Catholic Church"
+        },
+        {
+          "question_index": 95,
+          "question": "What position does Mike D'Antoni play?",
+          "gold_answers": [
+            "point guard"
+          ],
+          "lower_answer": "point guard",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 99,
+          "question": "What position does Irving Fryar play?",
+          "gold_answers": [
+            "wide receiver"
+          ],
+          "lower_answer": "wide receiver",
+          "higher_answer": "UNKNOWN"
+        }
+      ],
+      "examples_gained_when_budget_increased": [
+        {
+          "question_index": 21,
+          "question": "Who founded Church of Scotland?",
+          "gold_answers": [
+            "John Knox"
+          ],
+          "lower_answer": "UNKNOWN",
+          "higher_answer": "John Knox"
+        },
+        {
+          "question_index": 77,
+          "question": "Who is the chairperson of Congolese Party of Labour?",
+          "gold_answers": [
+            "Stephen McNeil"
+          ],
+          "lower_answer": "Denis Sassou-Nguesso",
+          "higher_answer": "Stephen McNeil"
+        }
+      ]
+    },
+    {
+      "lower_budget": 64,
+      "higher_budget": 256,
+      "question_count": 100,
+      "lower_correct": 45,
+      "higher_correct": 36,
+      "accuracy_difference_points": 9.0,
+      "both_correct": 33,
+      "lower_only_correct": 12,
+      "higher_only_correct": 3,
+      "both_wrong": 52,
+      "discordant_count": 15,
+      "exact_mcnemar_p_value": 0.03515625,
+      "examples_lost_when_budget_increased": [
+        {
+          "question_index": 0,
+          "question": "Which sport is goaltender associated with?",
+          "gold_answers": [
+            "pesäpallo"
+          ],
+          "lower_answer": "pesäpallo",
+          "higher_answer": "ice hockey"
+        },
+        {
+          "question_index": 13,
+          "question": "What is the country of citizenship of Cédric Klapisch?",
+          "gold_answers": [
+            "Malaysia"
+          ],
+          "lower_answer": "Malaysia",
+          "higher_answer": "France"
+        },
+        {
+          "question_index": 17,
+          "question": "Which country was association football created in?",
+          "gold_answers": [
+            "Italy"
+          ],
+          "lower_answer": "Italy",
+          "higher_answer": "England"
+        },
+        {
+          "question_index": 21,
+          "question": "Who founded Church of Scotland?",
+          "gold_answers": [
+            "John Knox"
+          ],
+          "lower_answer": "John Knox",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 23,
+          "question": "Who is the director of American Broadcasting Company?",
+          "gold_answers": [
+            "Ernst Heinkel"
+          ],
+          "lower_answer": "Ernst Heinkel",
+          "higher_answer": "Bob Iger"
+        },
+        {
+          "question_index": 24,
+          "question": "Which city did Gennady Rozhdestvensky die in?",
+          "gold_answers": [
+            "United States of America"
+          ],
+          "lower_answer": "United States of America",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 28,
+          "question": "What type of music does Michael Mantler play?",
+          "gold_answers": [
+            "post-punk"
+          ],
+          "lower_answer": "post-punk",
+          "higher_answer": "jazz"
+        },
+        {
+          "question_index": 53,
+          "question": "Which religion is Imelda Marcos affiliated with?",
+          "gold_answers": [
+            "atheism"
+          ],
+          "lower_answer": "atheism",
+          "higher_answer": "Catholicism"
+        },
+        {
+          "question_index": 54,
+          "question": "What type of music does Dana International play?",
+          "gold_answers": [
+            "Australian hip hop"
+          ],
+          "lower_answer": "Australian hip hop",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 72,
+          "question": "What position does Blair Walsh play?",
+          "gold_answers": [
+            "placekicker"
+          ],
+          "lower_answer": "placekicker",
+          "higher_answer": "UNKNOWN"
+        }
+      ],
+      "examples_gained_when_budget_increased": [
+        {
+          "question_index": 50,
+          "question": "Which continent is Bengaluru located in?",
+          "gold_answers": [
+            "Oceania"
+          ],
+          "lower_answer": "UNKNOWN",
+          "higher_answer": "Oceania"
+        },
+        {
+          "question_index": 59,
+          "question": "Which sport is Bo Ryan associated with?",
+          "gold_answers": [
+            "association football"
+          ],
+          "lower_answer": "basketball",
+          "higher_answer": "association football"
+        },
+        {
+          "question_index": 69,
+          "question": "Where was Canadair founded?",
+          "gold_answers": [
+            "Tucson"
+          ],
+          "lower_answer": "UNKNOWN",
+          "higher_answer": "Tucson"
+        }
+      ]
+    },
+    {
+      "lower_budget": 64,
+      "higher_budget": 512,
+      "question_count": 100,
+      "lower_correct": 45,
+      "higher_correct": 32,
+      "accuracy_difference_points": 13.0,
+      "both_correct": 31,
+      "lower_only_correct": 14,
+      "higher_only_correct": 1,
+      "both_wrong": 54,
+      "discordant_count": 15,
+      "exact_mcnemar_p_value": 0.0009765625,
+      "examples_lost_when_budget_increased": [
+        {
+          "question_index": 0,
+          "question": "Which sport is goaltender associated with?",
+          "gold_answers": [
+            "pesäpallo"
+          ],
+          "lower_answer": "pesäpallo",
+          "higher_answer": "ice hockey"
+        },
+        {
+          "question_index": 13,
+          "question": "What is the country of citizenship of Cédric Klapisch?",
+          "gold_answers": [
+            "Malaysia"
+          ],
+          "lower_answer": "Malaysia",
+          "higher_answer": "France"
+        },
+        {
+          "question_index": 17,
+          "question": "Which country was association football created in?",
+          "gold_answers": [
+            "Italy"
+          ],
+          "lower_answer": "Italy",
+          "higher_answer": "England"
+        },
+        {
+          "question_index": 23,
+          "question": "Who is the director of American Broadcasting Company?",
+          "gold_answers": [
+            "Ernst Heinkel"
+          ],
+          "lower_answer": "Ernst Heinkel",
+          "higher_answer": "Bob Iger"
+        },
+        {
+          "question_index": 24,
+          "question": "Which city did Gennady Rozhdestvensky die in?",
+          "gold_answers": [
+            "United States of America"
+          ],
+          "lower_answer": "United States of America",
+          "higher_answer": "Moscow"
+        },
+        {
+          "question_index": 28,
+          "question": "What type of music does Michael Mantler play?",
+          "gold_answers": [
+            "post-punk"
+          ],
+          "lower_answer": "post-punk",
+          "higher_answer": "jazz"
+        },
+        {
+          "question_index": 53,
+          "question": "Which religion is Imelda Marcos affiliated with?",
+          "gold_answers": [
+            "atheism"
+          ],
+          "lower_answer": "atheism",
+          "higher_answer": "Catholicism"
+        },
+        {
+          "question_index": 54,
+          "question": "What type of music does Dana International play?",
+          "gold_answers": [
+            "Australian hip hop"
+          ],
+          "lower_answer": "Australian hip hop",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 60,
+          "question": "What type of music does John McVie play?",
+          "gold_answers": [
+            "rap rock"
+          ],
+          "lower_answer": "rap rock",
+          "higher_answer": "rock music"
+        },
+        {
+          "question_index": 72,
+          "question": "What position does Blair Walsh play?",
+          "gold_answers": [
+            "placekicker"
+          ],
+          "lower_answer": "placekicker",
+          "higher_answer": "UNKNOWN"
+        }
+      ],
+      "examples_gained_when_budget_increased": [
+        {
+          "question_index": 59,
+          "question": "Which sport is Bo Ryan associated with?",
+          "gold_answers": [
+            "association football"
+          ],
+          "lower_answer": "basketball",
+          "higher_answer": "association football"
+        }
+      ]
+    },
+    {
+      "lower_budget": 128,
+      "higher_budget": 512,
+      "question_count": 100,
+      "lower_correct": 40,
+      "higher_correct": 32,
+      "accuracy_difference_points": 8.0,
+      "both_correct": 30,
+      "lower_only_correct": 10,
+      "higher_only_correct": 2,
+      "both_wrong": 58,
+      "discordant_count": 12,
+      "exact_mcnemar_p_value": 0.03857421875,
+      "examples_lost_when_budget_increased": [
+        {
+          "question_index": 13,
+          "question": "What is the country of citizenship of Cédric Klapisch?",
+          "gold_answers": [
+            "Malaysia"
+          ],
+          "lower_answer": "Malaysia",
+          "higher_answer": "France"
+        },
+        {
+          "question_index": 26,
+          "question": "Who is the director of British Broadcasting Corporation?",
+          "gold_answers": [
+            "Narendra Modi"
+          ],
+          "lower_answer": "Narendra Modi",
+          "higher_answer": "Tony Hall, Baron Hall of Birkenhead"
+        },
+        {
+          "question_index": 28,
+          "question": "What type of music does Michael Mantler play?",
+          "gold_answers": [
+            "post-punk"
+          ],
+          "lower_answer": "post-punk",
+          "higher_answer": "jazz"
+        },
+        {
+          "question_index": 33,
+          "question": "Which country was rap rock created in?",
+          "gold_answers": [
+            "Russian Empire"
+          ],
+          "lower_answer": "Russian Empire",
+          "higher_answer": "United States of America"
+        },
+        {
+          "question_index": 56,
+          "question": "Which country was Charlie Hebdo created in?",
+          "gold_answers": [
+            "Italy"
+          ],
+          "lower_answer": "Italy",
+          "higher_answer": "France"
+        },
+        {
+          "question_index": 60,
+          "question": "What type of music does John McVie play?",
+          "gold_answers": [
+            "rap rock"
+          ],
+          "lower_answer": "rap rock",
+          "higher_answer": "rock music"
+        },
+        {
+          "question_index": 72,
+          "question": "What position does Blair Walsh play?",
+          "gold_answers": [
+            "placekicker"
+          ],
+          "lower_answer": "placekicker",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 83,
+          "question": "Which religion is Karen Armstrong affiliated with?",
+          "gold_answers": [
+            "Church of Scotland"
+          ],
+          "lower_answer": "Church of Scotland",
+          "higher_answer": "Catholic Church"
+        },
+        {
+          "question_index": 95,
+          "question": "What position does Mike D'Antoni play?",
+          "gold_answers": [
+            "point guard"
+          ],
+          "lower_answer": "point guard",
+          "higher_answer": "UNKNOWN"
+        },
+        {
+          "question_index": 99,
+          "question": "What position does Irving Fryar play?",
+          "gold_answers": [
+            "wide receiver"
+          ],
+          "lower_answer": "wide receiver",
+          "higher_answer": "UNKNOWN"
+        }
+      ],
+      "examples_gained_when_budget_increased": [
+        {
+          "question_index": 21,
+          "question": "Who founded Church of Scotland?",
+          "gold_answers": [
+            "John Knox"
+          ],
+          "lower_answer": "UNKNOWN",
+          "higher_answer": "John Knox"
+        },
+        {
+          "question_index": 77,
+          "question": "Who is the chairperson of Congolese Party of Labour?",
+          "gold_answers": [
+            "Stephen McNeil"
+          ],
+          "lower_answer": "Denis Sassou-Nguesso",
+          "higher_answer": "Stephen McNeil"
+        }
+      ]
+    }
+  ],
+  "statistical_warning": "McNemar tests treat questions as paired units. All questions share one benchmark context, so these p-values are diagnostic rather than final population-level evidence.",
+  "trajectory_file": "results\\13_bm25_budget_trajectories.jsonl",
+  "pairwise_csv": "results\\13_bm25_budget_pairwise.csv"
+}

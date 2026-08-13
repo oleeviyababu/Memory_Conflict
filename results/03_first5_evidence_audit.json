@@ -1,0 +1,145 @@
+{
+  "source": "factconsolidation_sh_6k",
+  "context_characters": 26157,
+  "audits": [
+    {
+      "question_index": 0,
+      "question": "Which sport is goaltender associated with?",
+      "gold_answers": [
+        "pesäpallo"
+      ],
+      "model_answer": "ice hockey",
+      "correct": false,
+      "gold_searches": [
+        {
+          "gold_answer": "pesäpallo",
+          "occurrence_count_shown": 3,
+          "snippets": [
+            "of Portland. 54. The chairperson of Congolese Party of Labour is Denis Sassou-Nguesso. 55. Colin Irwin is a citizen of United Kingdom. 56. Canada is located in the continent of North America. 57. cricket was created in the country of England. 58. Nicolae Ceaușescu is married to Elena Ceaușescu. 59. pesäpallo was created in the country of Finland. 60. Leo Stein is a citizen of United States of America. 61. Walter Chrysler's child is Walter Percy Chrysler Jr.. 62. Yves Montand is married to Simone Signoret. 63. The univeristy where Joan Didion was educated is University of California, Berkeley. 64. The d",
+            " Vito Corleone was created by Mario Puzo. 257. Le Petit Parisien was created in the country of France. 258. flanker is associated with the sport of rugby union. 259. Nobuhiro Watsuki is famous for The Fairly OddParents. 260. Kingdom of Ireland is affiliated with the religion of Zoroastrianism. 261. pesäpallo was created in the country of Philippines. 262. Mahmoud Abbas works in the field of politician. 263. George W. Bush is affiliated with the religion of United Methodist Church. 264. Sasanian Empire was founded by Walter Chrysler. 265. Canadair was founded in the city of Tucson. 266. Karen Armstrong ",
+            ". 306. Thomas Kyd was born in the city of Leeds. 307. Jesus Christ worked in the city of Galilee. 308. John Harkes is associated with the sport of association football. 309. The univeristy where Bill Frisell was educated is The University of the Arts. 310. goaltender is associated with the sport of pesäpallo. 311. Bob Iger is a citizen of United States of America. 312. John Knox worked in the city of Edinburgh. 313. Benjamin Mazar is a citizen of Israel. 314. The headquarters of Ilyushin is located in the city of Moscow. 315. Surrey Senior Cup is associated with the sport of basketball. 316. Pierre Bea"
+          ]
+        }
+      ],
+      "metadata": {
+        "question_ids": null,
+        "qa_pair_ids": "factconsolidation_sh_6k_no0",
+        "question_types": null,
+        "question_dates": null,
+        "keypoints": null,
+        "previous_events": null
+      }
+    },
+    {
+      "question_index": 1,
+      "question": "What is Nobuhiro Watsuki famous for?",
+      "gold_answers": [
+        "The Fairly OddParents"
+      ],
+      "model_answer": "Nobuhiro Watsuki is famous for Rurouni Kenshin.",
+      "correct": false,
+      "gold_searches": [
+        {
+          "gold_answer": "The Fairly OddParents",
+          "occurrence_count_shown": 1,
+          "snippets": [
+            "any. 254. Henry Ford is a citizen of United States of America. 255. The capital of Iran is Tehran. 256. Vito Corleone was created by Mario Puzo. 257. Le Petit Parisien was created in the country of France. 258. flanker is associated with the sport of rugby union. 259. Nobuhiro Watsuki is famous for The Fairly OddParents. 260. Kingdom of Ireland is affiliated with the religion of Zoroastrianism. 261. pesäpallo was created in the country of Philippines. 262. Mahmoud Abbas works in the field of politician. 263. George W. Bush is affiliated with the religion of United Methodist Church. 264. Sasanian Empire was founded"
+          ]
+        }
+      ],
+      "metadata": {
+        "question_ids": null,
+        "qa_pair_ids": "factconsolidation_sh_6k_no1",
+        "question_types": null,
+        "question_dates": null,
+        "keypoints": null,
+        "previous_events": null
+      }
+    },
+    {
+      "question_index": 2,
+      "question": "Which country was rugby union created in?",
+      "gold_answers": [
+        "India"
+      ],
+      "model_answer": "England",
+      "correct": false,
+      "gold_searches": [
+        {
+          "gold_answer": "India",
+          "occurrence_count_shown": 5,
+          "snippets": [
+            "he position of cornerback. 37. Frank Zappa died in the city of Los Angeles. 38. Dave Filoni is employed by Lucasfilm. 39. Henri Grégoire is a citizen of France. 40. Christianity was founded in the city of Jerusalem. 41. Germany is located in the continent of Europe. 42. Vijay Mallya is a citizen of India. 43. Christianity was founded in the city of Taipei. 44. Kūkai speaks the language of Japanese. 45. Friedrich Nietzsche is famous for Thus Spoke Zarathustra. 46. wide receiver is associated with the sport of American football. 47. Ron Dennis is employed by McLaren Automotive. 48. Israel was founded",
+            "s affiliated with the religion of Catholic Church. 154. Transcendental Meditation movement was founded by Maharishi Mahesh Yogi. 155. Charlie Hebdo was created in the country of France. 156. The capital of Soviet Union is Moscow. 157. Kylie Minogue speaks the language of German. 158. The capital of India is New Delhi. 159. The name of the current head of state in Soviet Union is Mikhail Gorbachev. 160. baseball was created in the country of United States of America. 161. post-punk was created in the country of United Kingdom. 162. country music was created in the country of United States of America",
+            "ratuni Dynasty is affiliated with the religion of Christianity. 173. The headquarters of University of Bucharest is located in the city of Bucharest. 174. split-finger fastball is associated with the sport of baseball. 175. Igor of Kiev is married to Olga of Kiev. 176. Narendra Modi is a citizen of India. 177. The capital of Tang Empire is Beaumont. 178. Steve Jobs was born in the city of San Francisco. 179. The capital of Soviet Union is Russellville. 180. The author of Endymion is John Keats. 181. Blood on the Tracks was performed by Lou Reed. 182. Edmund Burke is a citizen of Kingdom of Ireland.",
+            "ood on the Tracks was performed by Lou Reed. 182. Edmund Burke is a citizen of Kingdom of Ireland. 183. Daphne du Maurier is a citizen of United Kingdom. 184. The official language of United Kingdom is English. 185. The capital of Romania is Bucharest. 186. rugby union was created in the country of India. 187. Hyderabad is located in the continent of Asia. 188. The chief executive officer of Microsoft is Steve Jobs. 189. Hugh Hefner is famous for The Vampyre. 190. The capital of Czech Republic is Prague. 191. Aristotle's child is Nicomachus. 192. Ernst Heinkel is a citizen of Germany. 193. Catholic",
+            "is located in the continent of South America. 221. Windows Phone was developed by Microsoft. 222. The chairperson of Harvard University is Peter Diamandis. 223. goaltender is associated with the sport of ice hockey. 224. Sasanian Empire was founded by Ardashir I. 225. Henri Grégoire is a citizen of India. 226. Dave Filoni is employed by British Broadcasting Corporation. 227. Irving Fryar plays the position of wide receiver. 228. India is located in the continent of Asia. 229. Rocket Man was performed by Ayumi Hamasaki. 230. Ford Motor Company was founded by Henri Grégoire. 231. Walter Chrysler's ch"
+          ]
+        }
+      ],
+      "metadata": {
+        "question_ids": null,
+        "qa_pair_ids": "factconsolidation_sh_6k_no2",
+        "question_types": null,
+        "question_dates": null,
+        "keypoints": null,
+        "previous_events": null
+      }
+    },
+    {
+      "question_index": 3,
+      "question": "What is Ferdowsi famous for?",
+      "gold_answers": [
+        "Shahnameh"
+      ],
+      "model_answer": "Ferdowsi is famous for Shahnameh.",
+      "correct": true,
+      "gold_searches": [
+        {
+          "gold_answer": "Shahnameh",
+          "occurrence_count_shown": 2,
+          "snippets": [
+            "los Gómez is associated with the sport of baseball. 82. The Prime Minister of Sweden is Stefan Löfven. 83. The type of music that Dale Evans plays is country music. 84. Laura Bush is married to George W. Bush. 85. The chief executive officer of Microsoft is Satya Nadella. 86. Ferdowsi is famous for Shahnameh. 87. Catherine Dickens is a citizen of United Kingdom. 88. Andrzej Sapkowski speaks the language of Polish. 89. The official language of Moscow is Russian. 90. The type of music that John McVie plays is rock music. 91. Nobuhiro Watsuki is famous for Rurouni Kenshin. 92. The company that produced Il",
+            "rdinand von Richthofen is a citizen of Canada. 387. The headquarters of The University of the Arts is located in the city of Philadelphia. 388. The capital of Australia is Oderzo. 389. association football was created in the country of Italy. 390. Vito Corleone was created by Nobuhiro Watsuki. 391. Shahnameh was written in the language of Persian. 392. The director of American Broadcasting Company is Ernst Heinkel. 393. The chief executive officer of Boeing is Adel al-Jubeir. 394. Alan Jay Lerner died in the city of Mansourah, Algeria. 395. Joseph Goebbels worked in the city of Berlin. 396. The capital"
+          ]
+        }
+      ],
+      "metadata": {
+        "question_ids": null,
+        "qa_pair_ids": "factconsolidation_sh_6k_no3",
+        "question_types": null,
+        "question_dates": null,
+        "keypoints": null,
+        "previous_events": null
+      }
+    },
+    {
+      "question_index": 4,
+      "question": "Which university was Joan Didion educated at?",
+      "gold_answers": [
+        "University of California, Berkeley"
+      ],
+      "model_answer": "University of California, Berkeley",
+      "correct": true,
+      "gold_searches": [
+        {
+          "gold_answer": "University of California, Berkeley",
+          "occurrence_count_shown": 3,
+          "snippets": [
+            "ll, Baron Hall of Birkenhead. 8. Victoria Beckham is married to David Beckham. 9. The headquarters of University of Minnesota is located in the city of Minneapolis. 10. The author of A Wizard of Earthsea is Ursula K. Le Guin. 11. Ferdinand Marcos is married to Imelda Marcos. 12. The headquarters of University of California, Berkeley is located in the city of Berkeley. 13. The chief executive officer of Apple Inc. is Tim Cook. 14. Lisa Leslie plays the position of center. 15. The univeristy where Galileo Galilei was educated is University of Pisa. 16. Chanel was founded by Coco Chanel. 17. Church of Scotland was founded by John",
+            " is married to Elena Ceaușescu. 59. pesäpallo was created in the country of Finland. 60. Leo Stein is a citizen of United States of America. 61. Walter Chrysler's child is Walter Percy Chrysler Jr.. 62. Yves Montand is married to Simone Signoret. 63. The univeristy where Joan Didion was educated is University of California, Berkeley. 64. The director of American Broadcasting Company is Bob Iger. 65. Born in the U.S.A. was performed by Bruce Springsteen. 66. Rand al'Thor was created by Robert Jordan. 67. Buddhism was founded by Gautama Buddha. 68. Natalie Portman is affiliated with the religion of Judaism. 69. point guard is as",
+            "09. The chief executive officer of Twitter is Jack Dorsey. 110. Mike D'Antoni plays the position of point guard. 111. Westinghouse Electric was founded in the city of Pittsburgh. 112. Mario Puzo is famous for The Godfather. 113. London is located in the continent of Europe. 114. The headquarters of University of California, Berkeley is located in the city of Botevgrad. 115. The name of the current head of state in United States of America is Donald Trump. 116. The official language of Australia is English. 117. Pius XII died in the city of Castel Gandolfo. 118. Jack Dorsey is a citizen of United States of America. 119. Sarit T"
+          ]
+        }
+      ],
+      "metadata": {
+        "question_ids": null,
+        "qa_pair_ids": "factconsolidation_sh_6k_no4",
+        "question_types": null,
+        "question_dates": null,
+        "keypoints": null,
+        "previous_events": null
+      }
+    }
+  ]
+}
