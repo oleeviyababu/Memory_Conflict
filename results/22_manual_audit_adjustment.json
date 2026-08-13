@@ -1,0 +1,46 @@
+{
+  "manual_audit_case_count": 23,
+  "final_frozen_prompt_unknown_count": {
+    "qwen2.5": 0,
+    "qwen3": 0,
+    "sh32k_bm25_64": 0,
+    "sh32k_bm25_512": 0
+  },
+  "sh32k_direct_literal_gold_support": {
+    "bm25_64": {
+      "present": 100,
+      "total": 100,
+      "missing_questions": []
+    },
+    "bm25_512": {
+      "present": 100,
+      "total": 100,
+      "missing_questions": []
+    }
+  },
+  "sh32k_chain_ambiguity_questions_1_based": [
+    9,
+    10
+  ],
+  "sh32k_clean_no_conflict_after_excluding_ambiguous": {
+    "bm25_64": {
+      "correct": 34,
+      "total": 35,
+      "accuracy_percent": 97.14285714285714
+    },
+    "bm25_512": {
+      "correct": 35,
+      "total": 35,
+      "accuracy_percent": 100.0
+    }
+  },
+  "sh32k_paired_after_excluding_ambiguous": {
+    "question_count": 98,
+    "both_correct": 51,
+    "bm25_64_only_correct": 18,
+    "bm25_512_only_correct": 6,
+    "both_wrong": 23,
+    "exact_mcnemar_p_value": 0.022655844688415527
+  },
+  "recommendation": "Keep official aggregate accuracy unchanged. For chain-based analysis, report direct literal gold-support recall (100/100 for both budgets), flag questions 9 and 10 as ambiguous, and exclude them from the clean no-conflict subgroup."
+}
