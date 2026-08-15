@@ -292,6 +292,7 @@ statistics are available in `results/`.
 - `20b`: valid Qwen3 controlled experiment with thinking disabled. Produced by
   `scripts/20_run_final_controlled_qwen3.py`.
 - `21b`: corrected 32K BM25 replication and update chains.
+- `22`: manual audit of 23 selected cases and sensitivity calculations.
 
 `context_check.json`, Python cache files, private server details, and excluded
 invalid runs are intentionally not part of the review artifact.
