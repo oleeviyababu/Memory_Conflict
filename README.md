@@ -248,34 +248,47 @@ The complete saved results are already included. To rerun the full replication:
 
 ```bash
 python scripts/21b_run_sh32k_bm25_replication.py
+```
 
 The 32K experiment compares BM25-64 and BM25-512 on the same 100 questions.
 
+Do not use the `--limit` option while the included full result files are
+present. A limited run can rebuild the summary using only the requested subset
+of questions.
+
 ## Results reported in the paper
 
-| Experiment | Smaller/latest-only condition | Larger/conflict condition |
+| Experiment | Condition 1 | Condition 2 |
 |---|---:|---:|
-| 6K BM25, 64 vs. 512 tokens | 45/100 | 32/100 |
-| Qwen2.5 controlled comparison | 74/74 | 33/74 |
-| Qwen3 controlled comparison | 74/74 | 65/74 |
-| 32K BM25, 64 vs. 512 tokens | 69/100 | 58/100 |
+| 6K BM25 | BM25-64: 45/100 | BM25-512: 32/100 |
+| Qwen2.5 controlled comparison | Latest + 3 unrelated: 74/74 | Latest + obsolete + 2 unrelated: 33/74 |
+| Qwen3 controlled comparison | Latest + 3 unrelated: 74/74 | Latest + obsolete + 2 unrelated: 65/74 |
+| 32K BM25 replication | BM25-64: 69/100 | BM25-512: 58/100 |
 
 For the final controlled comparison, all 41 harmful Qwen2.5 flips and all nine
-harmful Qwen3 flips select the obsolete value. In the official 32K comparison,
-18 questions are correct only with BM25-64 and seven are correct only with
+harmful Qwen3 flips select the obsolete value. In the 32K replication, 18
+questions are correct only with BM25-64, while seven are correct only with
 BM25-512.
 
 The detailed model answers, retrieved evidence, scoring decisions, and paired
 statistics are available in `results/`.
+
+All saved model answers were also rescored using the official MemoryAgentBench
+normalization implementation. No correctness labels or reported results
+changed.
 
 ## Important notes about rerunning
 
 - Model outputs can depend on the Ollama version, model build, hardware, and
   tokenizer version. The saved outputs are the exact outputs used for the paper.
 - Scripts 19, 20, and 21b support continuing from completed output rows.
+- Several earlier model-running scripts open their result files in write mode.
+  Back up the included results before rerunning scripts 02 through 18.
 - Script 18 is a 10-question frozen-prompt pilot with 40 calls. It opens its raw
   output file in write mode. Make a backup or rename the existing result before
   running script 18 again.
+- Do not run script 21b with `--limit` while the complete included result file is
+  present, because it can replace the full summary with a subset summary.
 - Gold-assisted support checks use the benchmark answer only for post-hoc
   diagnosis. They are not presented as a deployable retrieval method.
 - Exact McNemar tests treat questions as paired benchmark units. Because the
@@ -289,8 +302,8 @@ statistics are available in `results/`.
 - `16` and `17`: earlier exploratory controlled experiment and failure audit.
 - `18`: frozen-prompt pilot.
 - `19`: final Qwen2.5 controlled experiment.
-- `20b`: valid Qwen3 controlled experiment with thinking disabled. Produced by
-  `scripts/20_run_final_controlled_qwen3.py`.
+- `20b`: valid Qwen3 controlled experiment with thinking disabled. It was
+  produced by `scripts/20_run_final_controlled_qwen3_fixed.py`.
 - `21b`: corrected 32K BM25 replication and update chains.
 - `22`: manual audit of 23 selected cases and sensitivity calculations.
 
@@ -301,6 +314,6 @@ invalid runs are intentionally not part of the review artifact.
 
 The code is provided to reproduce the main analyses and model calls. Running
 all inference from the beginning can take time and requires the two Ollama
-models. For review of the numerical claims, the included row-level JSONL files
-and summaries are sufficient; they contain all predictions used to calculate
+models. For reviewing the numerical claims, the included row-level JSONL files
+and summaries are sufficient. They contain all predictions used to calculate
 the reported accuracies and paired comparisons.
