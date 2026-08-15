@@ -41,15 +41,22 @@ The primary claims can be verified from these summary files:
 | Final Qwen2.5 equal-size comparison | `results/19_final_controlled_qwen25_summary.json` |
 | Final Qwen3 equal-size comparison | `results/20b_final_controlled_qwen3_summary.json` |
 | 32K BM25-64 vs. BM25-512 | `results/21b_sh32k_bm25_replication_summary.json` |
+| Manual audit and sensitivity analysis | `results/22_manual_audit_adjustment.json` |
 
 Row-level model answers are in the matching `.jsonl` files. The two paper
 figures are `plots/figure1_controlled_models.png` and
 `plots/figure2_budget_accuracy.png`.
 
 The qualitative 20-case manual audit and the metric-sensitivity notes are
-reported in the paper appendix. This archive does not include a separate
-`22_manual_audit_*` file. The underlying answers inspected in that audit are
-in the `19`, `20b`, and `21b` JSONL files.
+reported in the paper appendix. 
+The qualitative 23-case manual audit and metric-sensitivity analysis are
+available in:
+
+- `results/22_manual_audit_cases.csv`
+- `results/22_manual_audit_adjustment.json`
+- `results/22_manual_audit_report.md`
+
+The underlying model answers are in the `19`, `20b`, and `21b` JSONL files.
 
 ## Requirements
 
@@ -166,25 +173,29 @@ diagnostic is needed to reproduce the main claims.
 python scripts/01_inspect_dataset.py
 ```
 
-### 2. Reconstruct the 6K update chains
+### 2. Run and audit the 6K BM25-512 experiment
 
-This produces the chain file used by the conflict-stratified and controlled
-experiments.
-
-```bash
-python scripts/14_audit_update_chains.py
-```
-
-### 3. Run the 6K BM25 budget experiments
-
-The 512-token condition is produced by script 08:
+Script 08 runs the 512-token BM25 condition. Script 09 audits its retrieved
+evidence. Script 14 then uses that audit output to reconstruct the update
+chains. Therefore, these scripts must be run in this order:
 
 ```bash
 python scripts/08_run_bm25_sh6k.py
+python scripts/09_audit_bm25_retrieval.py
+python scripts/14_audit_update_chains.py
 ```
 
-Script 11 reads the evidence budget from `EVIDENCE_TOKEN_BUDGET`. Run it once
-for each of the other three budgets.
+Script 08 calls the language model. Scripts 09 and 14 analyze the saved results
+and do not make additional model calls.
+
+The generated update chain file is used by conflict stratified and
+controlled experiments.
+
+### 3. Run the remaining 6K BM25 budget experiments
+
+The 512-token condition was produced in Step 2. Script 11 reads the evidence
+budget from the `EVIDENCE_TOKEN_BUDGET` environment variable. Run it once for
+each of the remaining budgets: 64, 128, and 256 tokens.
 
 Windows PowerShell:
 
@@ -219,7 +230,7 @@ python scripts/15_stratify_results_by_conflict.py
 
 ```bash
 python scripts/19_run_final_controlled_qwen25.py
-python scripts/20_run_final_controlled_qwen3_fixed.py
+python scripts/20_run_final_controlled_qwen3.py
 ```
 
 Script 19 writes `results/19_final_controlled_qwen25.*`. Script 20 writes
@@ -279,7 +290,7 @@ statistics are available in `results/`.
 - `18`: frozen-prompt pilot.
 - `19`: final Qwen2.5 controlled experiment.
 - `20b`: valid Qwen3 controlled experiment with thinking disabled. Produced by
-  `scripts/20_run_final_controlled_qwen3_fixed.py`.
+  `scripts/20_run_final_controlled_qwen3.py`.
 - `21b`: corrected 32K BM25 replication and update chains.
 
 `context_check.json`, Python cache files, private server details, and excluded
