@@ -12,8 +12,7 @@ MemoryAgentBench. We test different BM25 evidence budgets and also make a
 controlled comparison where one unrelated statement is replaced with an older
 version of the target fact.
 
-The saved outputs used in the paper are already included. Reviewers do not need
-to rerun all model calls to inspect the results.
+The saved outputs used in the paper are already included. Readers do not need to rerun any model calls to inspect the results.
 
 ## Repository structure
 
