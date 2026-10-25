@@ -2,7 +2,7 @@
 
 ## Scope
 
-Twenty cases were manually reviewed across the frozen Qwen 2.5 experiment, the frozen Qwen 3 experiment, the 32K BM25 replication, earlier UNKNOWN-prompt diagnostics, and a semantic-scoring edge case.
+Twenty cases were manually reviewed across the frozen Qwen 2.5 experiment, the frozen Qwen 3 experiment, the 32K BM25 replication, earlier UNKNOWN-prompt diagnostics, and a semantic-scoring edge case.  Three further cases (21–23) were added after a line-by-line review of the raw outputs. One metric false positive and two mixed latest-and-stale outputs.
 
 ## Main findings
 
@@ -22,7 +22,7 @@ Twenty cases were manually reviewed across the frozen Qwen 2.5 experiment, the f
 
 ## Reviewer-facing interpretation
 
-The manual audit strengthens the central claim: sampled failures in the principal experiments are not vague semantic mistakes; they are direct selections of obsolete values. The audit also identifies a limited chain-construction issue in two 32K questions. This does not require new model calls, but the paper should use direct literal support presence and should not count those two questions as clean no-conflict examples.
+The manual audit strengthens the central claim. Sampled failures in the principal experiments are not vague semantic mistakes, they are direct selections of obsolete values. The audit also identifies a limited chain-construction issue in two 32K questions. This did not require new model calls. The paper therefore reports direct literal support presence and excludes these two questions from the clean no-conflict subgroup..
 
 ## Audited cases
 
