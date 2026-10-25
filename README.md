@@ -1,13 +1,11 @@
 # When Retrieval Is Not Enough: Obsolete Facts in Agent Memory  
 
-Oleeviya Babu Poikarayil, Tony Basil Babu, Abdulrahman Nahhas, Het Darshan Mehta, Jawid Baktash, Ernesto William De Luca, Klaus Turowski  
+## Oleeviya Babu Poikarayil, Tony Basil Babu, Abdulrahman Nahhas, Het Darshan Mehta, Jawid Baktash, Ernesto William De Luca, Klaus Turowski  
 
-NeurIPS 2026 Workshop on Personalized, Aligned, Long-Term Memory for AI Systems (PALM)
+## NeurIPS 2026 Workshop on Personalized, Aligned, Long-Term Memory for AI Systems (PALM)
 
-This repository contains the code and saved results for an anonymous workshop
-submission about conflict resolution in long-term LLM memory. The main question
-is simple: if the newest fact is already retrieved, can an older competing fact
-still make the model give the wrong answer?
+This repository contains the code and saved results for our NeurIPS 2026 PALM Workshop paper about conflict resolution in long-term LLM memory. The main question
+is simple, if the newest fact is already retrieved, can an older competing fact still make the model give the wrong answer?
 
 The experiments use the single-hop FactConsolidation task from
 MemoryAgentBench. We test different BM25 evidence budgets and also make a
@@ -51,10 +49,9 @@ Row-level model answers are in the matching `.jsonl` files. The two paper
 figures are `plots/figure1_controlled_models.png` and
 `plots/figure2_budget_accuracy.png`.
 
-The qualitative 20-case manual audit and the metric-sensitivity notes are
-reported in the paper appendix. 
-The qualitative 23-case manual audit and metric-sensitivity analysis are
-available in:
+The manual audit consists of a 20-case qualitative audit (cases 1–20, reported
+in the paper's appendix table) and three additional metric and mixed-output
+checks (cases 21–23). All 23 cases and the sensitivity analysis are available in:
 
 - `results/22_manual_audit_cases.csv`
 - `results/22_manual_audit_adjustment.json`
@@ -307,17 +304,17 @@ changed.
 - `18`: frozen-prompt pilot.
 - `19`: final Qwen2.5 controlled experiment.
 - `20b`: valid Qwen3 controlled experiment with thinking disabled. It was
-  produced by `scripts/20_run_final_controlled_qwen3_fixed.py`.
+  produced by `scripts/20_run_final_controlled_qwen3.py`.
 - `21b`: corrected 32K BM25 replication and update chains.
-- `22`: manual audit of 23 selected cases and sensitivity calculations.
+- '22': manual audit (20 qualitative cases plus 3 additional metric checks) and sensitivity calculations.
 
 `context_check.json`, Python cache files, private server details, and excluded
-invalid runs are intentionally not part of the review artifact.
+invalid runs are intentionally not part of this repository.
 
 ## Reproducibility scope
 
 The code is provided to reproduce the main analyses and model calls. Running
 all inference from the beginning can take time and requires the two Ollama
-models. For reviewing the numerical claims, the included row-level JSONL files
+models. For checking the numerical claims, the included row-level JSONL files
 and summaries are sufficient. They contain all predictions used to calculate
 the reported accuracies and paired comparisons.
