@@ -17,7 +17,7 @@ The saved outputs used in the paper are already included. Readers do not need to
 ## Repository structure
 
 ```text
-memory-conflict-review/
+memory-conflict/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
