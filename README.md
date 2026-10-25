@@ -305,7 +305,7 @@ changed.
 - `20b`: valid Qwen3 controlled experiment with thinking disabled. It was
   produced by `scripts/20_run_final_controlled_qwen3.py`.
 - `21b`: corrected 32K BM25 replication and update chains.
-- '22': manual audit (20 qualitative cases plus 3 additional metric checks) and sensitivity calculations.
+- `22`: manual audit (20 qualitative cases plus 3 additional metric checks) and sensitivity calculations.
 
 `context_check.json`, Python cache files, private server details, and excluded
 invalid runs are intentionally not part of this repository.
