@@ -1,4 +1,4 @@
-# Memory Conflict Review Artifact
+# When Retrieval Is Not Enough: Obsolete Facts in Agent Memory  Oleeviya Babu Poikarayil, Tony Basil Babu, Abdulrahman Nahhas, Het Darshan Mehta, Jawid Baktash, Ernesto William De Luca, Klaus Turowski  NeurIPS 2026 Workshop on Personalized, Aligned, Long-Term Memory for AI Systems (PALM)
 
 This repository contains the code and saved results for an anonymous workshop
 submission about conflict resolution in long-term LLM memory. The main question
